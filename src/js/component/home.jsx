@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-const initialTaskList = ['aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'];
+const initialTaskList = [];
 
 const Home = () =>{
 	const [input, setInput] = useState('');
-	const [taskList, setTaskList] = useState([...initialTaskList]);
 	const [isHovered, setIsHovered] = useState(null);
+	const [taskList, setTaskList] = useState([...initialTaskList]);
 
 	const addTask = () => {
 		if (input.trim()) {
@@ -69,7 +69,6 @@ const Home = () =>{
 				<div className='second-page'></div>
 				<div className='third-page'></div>
 			</div>
-			
 		</div>
 	) 
 }
